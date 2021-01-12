@@ -1,4 +1,4 @@
-# Parallel_Distributed_Systems-Project_2
+# Parallel Distributed Systems Project_2
 
 In this project an array of random elements,that form a matrix in row major format , is being treted as input and the output is the k-nearest neighbours of each vector.(A vector represents an element in a d-dimensional space.Every d elements of the array are the coordinates of a vector).The result is stored in a struct calles knnresult which consists of the number of query elements m,the number k and two matrixes,again in row major format,size m*k called nidx and ndist.Nidx has the indexes of the k-nearest neighbours and ndist has the k-minimum distances.
 

@@ -2,7 +2,7 @@
 
 In this project an array of random elements,that form a matrix in row major format , is being treted as input and the output is the k-nearest neighbours of each vector.(A vector represents an element in a d-dimensional space.Every d elements of the array are the coordinates of a vector).The result is stored in a struct calles knnresult which consists of the number of query elements m,the number k and two matrixes,again in row major format,size m*k called nidx and ndist.Nidx has the indexes of the k-nearest neighbours and ndist has the k-minimum distances.
 
-**V0.c**
+**V0.c** \n
 In V0.c the k nearest neighbours for each point in space d are calculated by taking advantage of CBLAS routines in order to calculate the matrix 
 D=sqrt((X.*X)*e*inverse(e) -2*X*inverse(Y) + e*inverse(e)*(Y.*Y)) where Dij element is the distance between Xi and Yj element.Afterwards,a simple kmin search algortihm is being implemented to find the k-nearest neighbours of each point in set Y.
 
